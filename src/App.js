@@ -9,11 +9,11 @@ class App extends Component {
     updateCanvas() {
 
         const ctx = this.refs.canvas.getContext('2d'); //initilization of canvas
+        const size = 10; // Size of the box for color. Change this to increase size of the box
    
         for(let i=0; i<32; i++){
           var x = 0; // x cordinates
           var y = 0; // y cordinates
-          var size = 10; // Size of the box for color. Change this to increase size of the box
           for(let j = 0; j<32; j++){
             for(let k=0; k<32; k++){
               //fill color to box
